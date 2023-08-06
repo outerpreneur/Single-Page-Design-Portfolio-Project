@@ -11,6 +11,12 @@
       href="./assets/favicon-32x32.png"
     />
     <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -26,6 +32,9 @@
               granate: "#552049",
               sand: "#7A746E",
             },
+            fontFamily: {
+              jakarta: "Plus Jakarta Sans",
+            },
           },
         },
       };
@@ -33,7 +42,7 @@
 
     <title>Frontend Mentor | Single-page design portfolio</title>
   </head>
-  <body class="bg-beige text-black-500">
+  <body class="bg-beige text-black-500 font-jakarta">
     <header class="flex justify-between p-2 h-[60px]">
       <img src="/assets/logo.svg" />
       <button class="bg-black text-white py-0 px-4 rounded-xl">
