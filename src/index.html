@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              beige: "#FFF7F0",
+              purple: "#755CDE",
+              yellow: "#F6A560",
+              peach: "#F39E9E",
+              orange: "#EB7565",
+              teal: "#61C4B7",
+              granate: "#552049",
+              sand: "#7A746E",
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Frontend Mentor | Single-page design portfolio</title>
+  </head>
+  <body class="bg-beige text-black-500">
+    <header class="flex justify-between p-2 h-[60px]">
+      <img src="/assets/logo.svg" />
+      <button class="bg-black text-white py-0 px-4 rounded-xl">
+        Free Consultation
+      </button>
+    </header>
+    <div class="text-center py-2 px-3">
+      <h1 class="text-3xl">Design solutions made easy</h1>
+
+      <p>
+        With over ten years of experience in various design disciplines, I’m
+        your one-stop shop for your design needs.
+      </p>
+    </div>
+
+    <div class="blocks grid grid-cols-2 text-white gap-4">
+      <div
+        class="col-span-2 bg-purple flex flex-col h-[364px] p-3 justify-between rounded-md"
+      >
+        <img
+          class="w-[128px] self-end"
+          src="/assets/pattern-graphic-design.svg"
+        />
+        <p class="text-white">Graphic Design</p>
+      </div>
+      <div
+        class="h-[182px] bg-yellow flex flex-col p-3 justify-between rounded-md"
+      >
+        <img class="self-end" src="/assets/pattern-ui-ux.svg" />
+        <p>UI/UX</p>
+      </div>
+      <div
+        class="h-[182px] bg-peach flex flex-col p-3 justify-between rounded-md"
+      >
+        <img class="self-end" src="/assets/pattern-apps.svg" />
+        <p>Apps</p>
+      </div>
+      <div
+        class="h-[182px] bg-orange col-span-2 flex flex-col p-3 justify-between rounded-md"
+      >
+        <img class="self-end" src="/assets/pattern-photography.svg" />
+        <p>Photography</p>
+      </div>
+      <div
+        class="h-[182px] bg-teal col-span-2 flex flex-col p-3 justify-between rounded-md"
+      >
+        <img class="self-end" src="/assets/pattern-illustrations.svg" />
+        <p>Illustrations</p>
+      </div>
+      <div
+        class="h-[182px] bg-granate col-span-2 flex flex-col p-3 justify-between rounded-md"
+      >
+        <img class="self-end" src="/assets/pattern-motion-graphics.svg" />
+        <p>Motion Graphics</p>
+      </div>
+    </div>
+
+    <div>
+      <img src="/assets/image-amy.webp" />
+      <h2>I’m Amy, and I’d love to work on your next project</h2>
+
+      <p>
+        I love working with others to create beautiful design solutions. I’ve
+        designed everything from brand illustrations to complete mobile apps.
+        I’m also handy with a camera!
+      </p>
+
+      <button>Free Consultation</button>
+    </div>
+
+    <div>
+      <h3>My Work</h3>
+      <img src="/assets/image-slide-1.jpg" />
+      <img src="/assets/image-slide-2.jpg" />
+      <img src="/assets/image-slide-3.jpg" />
+      <img src="/assets/image-slide-4.jpg" />
+      <img src="/assets/image-slide-5.jpg" />
+      <div>
+        <img src="/assets/icon-arrow-left.svg" />
+        <img src="/assets/icon-arrow-right.svg" />
+      </div>
+    </div>
+    <div>
+      <h4>Book a call with me</h4>
+
+      <p>
+        I’d love to have a chat to see how I can help you. The best first step
+        is for us to discuss your project during a free consultation. Then we
+        can move forward from there.
+      </p>
+    </div>
+
+    <button>Free Consultation</button>
+    <footer>
+      <button>Free Consultation</button>
+    </footer>
+  </body>
+</html>
