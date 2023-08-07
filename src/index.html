@@ -18,6 +18,7 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
     <script>
       tailwind.config = {
         theme: {
@@ -131,18 +132,25 @@
       </div>
     </div>
 
-    <div class="flex flex-col gap-6">
+    <div class="flex flex-col gap-6 relative overflow-hidden w-[100vw]">
       <h3 class="text-center text-lg font-bold sm:text-2xl">My Work</h3>
-      <div class="flex gap-3">
-        <img src="/assets/image-slide-1.jpg" />
-        <img src="/assets/image-slide-2.jpg" />
-        <img src="/assets/image-slide-3.jpg" />
-        <img src="/assets/image-slide-4.jpg" />
-        <img src="/assets/image-slide-5.jpg" />
+      <div
+        id="slider"
+        class="flex gap-3 relative w-[10000vw]"
+        style="transition: transform 0.3s ease-out"
+      >
+        <img class="rounded-lg" src="/assets/image-slide-1.jpg" />
+        <img class="rounded-lg" src="/assets/image-slide-2.jpg" />
+        <img class="rounded-lg" src="/assets/image-slide-3.jpg" />
+        <img class="rounded-lg" src="/assets/image-slide-4.jpg" />
+        <img class="rounded-lg" src="/assets/image-slide-5.jpg" />
       </div>
       <div class="flex justify-center gap-3">
         <div
-          class="bg-black inline-block p-5 rounded-full cursor-pointer hover:bg-purple"
+          id="shift-left"
+          class="bg-black inline-block p-5 rounded-full cursor-pointer hover:bg-purple transition-transform"
+          onclick="shiftSlider('left')"
+          @click="offset += 200"
         >
           <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -152,7 +160,10 @@
           </svg>
         </div>
         <div
-          class="bg-black inline-block p-5 rounded-full cursor-pointer hover:bg-purple"
+          id="shift-right"
+          class="bg-black inline-block p-5 rounded-full cursor-pointer hover:bg-purple transition-transform"
+          onclick="shiftSlider('right')"
+          @click="offset -= 200"
         >
           <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -197,4 +208,5 @@
       </button>
     </footer>
   </body>
+  <script src="/app.js"></script>
 </html>
