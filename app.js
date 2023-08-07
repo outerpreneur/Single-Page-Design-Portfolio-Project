@@ -33,12 +33,12 @@ const autoSlide = setInterval(function () {
 // slider buttons
 
 document.querySelector("#shift-right").addEventListener("click", function () {
-  // clearInterval(autoSlide);
+  clearInterval(autoSlide);
   nextSlide();
 });
 
 document.querySelector("#shift-left").addEventListener("click", function () {
-  // clearInterval(autoSlide);
+  clearInterval(autoSlide);
   previousSlide();
 });
 
